@@ -60,6 +60,10 @@ $secondary-2: #76879A;
     color: $primary-1;
     margin: 2em 0;
 }
+.title-section3{
+    color: $primary-1;   
+}
+
 .title-portofolio{
     color: $primary-1;
     text-align: center;
@@ -71,9 +75,15 @@ $secondary-2: #76879A;
         margin-bottom: 3em;
     }
 }
-header{
-    background-color: $primary-1;
-    background-size: 100% 60% ;
+.bg-primary1{
+    background-color:$primary-1;
+}
+header{           
+    background-image: url('/assets/image/header.jpg');
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    
+    
     .header{
         text-align: center;
         padding: 5em 0;
@@ -82,21 +92,39 @@ header{
             border-top: 1px solid $primary-2;   
             width: 40%;        
         }
+        
         a{
             color: #fff;
         }
     }
 }
-
+header::before{
+    content:'\A';
+    position:absolute;
+    width:100%; height:94%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:1;
+   
+    
+}
 .layanan{
     width: 100%;
-    height: 350px;
+    height: 370px;
     padding: 20px 20px;
     color: #fff;
     border-radius: 12px;
     background-color: $primary-2;
+    margin-bottom: 24px;
     h5{
         margin-bottom: 18px;
+    }
+    i{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    p{
+        text-align: justify;
     }
 }
 .card-portofolio{
@@ -114,4 +142,56 @@ header{
     p{
         color: $secondary-2;
     }
+}
+
+.slider-client{
+    margin-bottom: 5em;
+    .card-img{
+        img{
+            width: 200px;
+            opacity: 0.2;
+            transition: 0.5s;
+            margin: auto;
+        }
+        img:hover{
+            opacity: 1;
+        }
+    }
+}
+.slider-kata{
+    margin-bottom: 5em;
+    
+    .card-kata{
+        display: flex !important;
+        color: #fff;
+        align-items: center;
+        img{
+            width: 200px;
+            border-radius: 50%;
+        }
+        .text{
+            margin-left: 40px;
+        }
+    }
+}
+
+.artikel{
+    img{
+        border-radius: 12px;
+        width: 80%;
+        margin: auto;
+    }
+    h2{
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    p{
+        text-align: justify;
+    }
+    a{
+        color: $primary-1;
+    }
+}
+.hubungi{
+    background-image: url('/assets/image/hubungi.png');
 }
