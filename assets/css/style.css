@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 #custom-nav {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -40,8 +44,14 @@
   color: #fff !important;
   border-color: #fff !important;
 }
-#custom-nav .navbar-toggler-icon {
-  color: #fff;
+@media (max-width: 991.98px) {
+  #custom-nav .navbar-nav {
+    padding: 10px;
+  }
+  #custom-nav .nav-item {
+    width: fit-content;
+    margin-bottom: 10px;
+  }
 }
 
 .title-section {
@@ -108,11 +118,9 @@
 }
 
 header {
-  background-image: url("/dakon/assets/image/header.jpg");
+  background-image: url("/assets/image/header.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  background-size: 100vw 750px;
 }
 header .header {
   text-align: center;
@@ -126,6 +134,12 @@ header .header hr {
 }
 header .header a {
   color: #fff;
+}
+@media (max-width: 991.98px) {
+  header {
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .layanan {
@@ -259,7 +273,7 @@ header .header a {
 }
 
 .hubungi {
-  background-image: url("/dakon/assets/image/hubungi.png");
+  background-image: url("/assets/image/hubungi.png");
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
@@ -270,6 +284,15 @@ header .header a {
     background-size: cover;
     background-position: right;
   }
+}
+.hubungi form {
+  margin-top: 24px;
+}
+.hubungi .form-control {
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #0D253F;
 }
 
 footer img {
