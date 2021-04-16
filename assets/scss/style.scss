@@ -54,14 +54,31 @@ $secondary-2: #76879A;
 .title-section{
     color: #fff;
     text-align: center;
-    margin: 2em 0;
+    margin: 1em 0;
+    mark{
+        background-color: transparent;
+        color: $primary-2;
+        padding: 0;
+    }
 }
 .title-section2{
     color: $primary-1;
     margin: 2em 0;
+    mark{
+        background-color: transparent;
+        color: $primary-2;
+        padding: 0;
+    }
 }
 .title-section3{
-    color: $primary-1;   
+    color: $primary-1;  
+    margin-top: 4em ; 
+    
+    mark{
+        background-color: transparent;
+        color: $primary-2;
+        padding: 0;
+    }
 }
 
 .title-portofolio{
@@ -73,20 +90,35 @@ $secondary-2: #76879A;
     p{
         margin-top: 1em;
         margin-bottom: 3em;
+        color: $secondary-2;
+    }
+    mark{
+        background-color: transparent;
+        color: $primary-2;
     }
 }
+.btn-blue{
+    margin-top: 4em;
+    background-color: $primary-2;
+    color: #fff;    
+}
+.btn-blue:hover{
+    background-color: $secondary-1 !important;
+    color: #fff;
+}
 .bg-primary1{
-    background-color:$primary-1;
+    background-color:$primary-1;    
 }
 header{           
-    background-image: url('/assets/image/header.jpg');
-    background-size: 100% 90%;
+    background-image: url('/dakon/assets/image/header.jpg');        
     background-repeat: no-repeat;
-    
-    
+    background-attachment: fixed;
+    background-size: cover;  
+    background-position: center;      
     .header{
         text-align: center;
-        padding: 5em 0;
+        padding-top: 5em;
+        padding-bottom: 2em;
         color: #fff;
         hr{
             border-top: 1px solid $primary-2;   
@@ -98,19 +130,8 @@ header{
         }
     }
 }
-header::before{
-    content:'\A';
-    position:absolute;
-    width:100%; height:94%;
-    top:0; left:0;
-    background:rgba(0,0,0,0.6);
-    opacity:1;
-   
-    
-}
-.layanan{
-    width: 100%;
-    height: 370px;
+
+.layanan{        
     padding: 20px 20px;
     color: #fff;
     border-radius: 12px;
@@ -120,16 +141,22 @@ header::before{
         margin-bottom: 18px;
     }
     i{
-        font-size: 50px;
+        font-size: 40px;
         margin-bottom: 20px;
     }
     p{
         text-align: justify;
     }
 }
-.card-portofolio{
-    width: 100%;
-    height: 400px;    
+.whyus{
+    h3{
+        color: $secondary-1;
+    }
+    p{
+        color: $secondary-2;
+    }
+}
+.card-portofolio{         
     text-align: center;
     color: $secondary-1;
     margin-bottom: 30px;
@@ -159,6 +186,7 @@ header::before{
     }
 }
 .slider-kata{
+    margin-top: 5em;
     margin-bottom: 5em;
     
     .card-kata{
@@ -172,26 +200,107 @@ header::before{
         .text{
             margin-left: 40px;
         }
+        // XS
+        @media (max-width: 575.98px) {
+            flex-direction: column;
+            .text{
+                margin-top: 40px;
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+        // SM
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            flex-direction: column;
+            .text{
+                margin-top: 40px;
+                margin-left: 0;
+                text-align: center;
+            }
+        }
     }
 }
-
+.qt-left{
+    position: absolute;
+    width: 80px;
+    top: 0;
+    left: 0;
+}
+.qt-right{
+    position: absolute;
+    width: 80px;
+    bottom: 0;
+    right: 0;
+}
 .artikel{
+    margin-bottom: 5em;
     img{
         border-radius: 12px;
         width: 80%;
         margin: auto;
     }
-    h2{
-        margin-top: 50px;
+    h2{        
         margin-bottom: 40px;
+        color: $secondary-1;
+        // MD
+        @media (min-width: 768px) and (max-width: 991.98px) { 
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
     }
     p{
         text-align: justify;
+        color: $secondary-2;
     }
     a{
-        color: $primary-1;
+        color: $primary-2;
     }
+    
 }
 .hubungi{
-    background-image: url('/assets/image/hubungi.png');
+    background-image: url('/dakon/assets/image/hubungi.png');
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    @media (max-width: 991.98px) { 
+        background-size: cover;
+        background-position: right;
+    }
+}
+footer{
+    img{
+        margin: auto;
+        width: 90%;
+    }
+    h4{
+        color: $secondary-1;
+    }
+    h5{
+        color: $secondary-1;
+        margin-top: 10px;
+    }
+    p{
+        color: $secondary-2;
+    }
+    i{
+        margin-right: 10px;
+    }
+}
+
+
+// XS
+@media (max-width: 575.98px) {
+}
+// SM
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+// MD
+@media (min-width: 768px) and (max-width: 991.98px) { 
+}
+// LG
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+// XL
+@media (min-width: 1200px) {
 }

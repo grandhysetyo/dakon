@@ -47,16 +47,32 @@
 .title-section {
   color: #fff;
   text-align: center;
-  margin: 2em 0;
+  margin: 1em 0;
+}
+.title-section mark {
+  background-color: transparent;
+  color: #3FA5D4;
+  padding: 0;
 }
 
 .title-section2 {
   color: #0D253F;
   margin: 2em 0;
 }
+.title-section2 mark {
+  background-color: transparent;
+  color: #3FA5D4;
+  padding: 0;
+}
 
 .title-section3 {
   color: #0D253F;
+  margin-top: 4em;
+}
+.title-section3 mark {
+  background-color: transparent;
+  color: #3FA5D4;
+  padding: 0;
 }
 
 .title-portofolio {
@@ -69,6 +85,22 @@
 .title-portofolio p {
   margin-top: 1em;
   margin-bottom: 3em;
+  color: #76879A;
+}
+.title-portofolio mark {
+  background-color: transparent;
+  color: #3FA5D4;
+}
+
+.btn-blue {
+  margin-top: 4em;
+  background-color: #3FA5D4;
+  color: #fff;
+}
+
+.btn-blue:hover {
+  background-color: #4A5768 !important;
+  color: #fff;
 }
 
 .bg-primary1 {
@@ -76,13 +108,16 @@
 }
 
 header {
-  background-image: url("/assets/image/header.jpg");
-  background-size: 100% 90%;
+  background-image: url("/dakon/assets/image/header.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 header .header {
   text-align: center;
-  padding: 5em 0;
+  padding-top: 5em;
+  padding-bottom: 2em;
   color: #fff;
 }
 header .header hr {
@@ -93,20 +128,7 @@ header .header a {
   color: #fff;
 }
 
-header::before {
-  content: "\a";
-  position: absolute;
-  width: 100%;
-  height: 94%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 1;
-}
-
 .layanan {
-  width: 100%;
-  height: 370px;
   padding: 20px 20px;
   color: #fff;
   border-radius: 12px;
@@ -117,16 +139,21 @@ header::before {
   margin-bottom: 18px;
 }
 .layanan i {
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 .layanan p {
   text-align: justify;
 }
 
+.whyus h3 {
+  color: #4A5768;
+}
+.whyus p {
+  color: #76879A;
+}
+
 .card-portofolio {
-  width: 100%;
-  height: 400px;
   text-align: center;
   color: #4A5768;
   margin-bottom: 30px;
@@ -155,6 +182,7 @@ header::before {
 }
 
 .slider-kata {
+  margin-top: 5em;
   margin-bottom: 5em;
 }
 .slider-kata .card-kata {
@@ -169,25 +197,97 @@ header::before {
 .slider-kata .card-kata .text {
   margin-left: 40px;
 }
+@media (max-width: 575.98px) {
+  .slider-kata .card-kata {
+    flex-direction: column;
+  }
+  .slider-kata .card-kata .text {
+    margin-top: 40px;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .slider-kata .card-kata {
+    flex-direction: column;
+  }
+  .slider-kata .card-kata .text {
+    margin-top: 40px;
+    margin-left: 0;
+    text-align: center;
+  }
+}
 
+.qt-left {
+  position: absolute;
+  width: 80px;
+  top: 0;
+  left: 0;
+}
+
+.qt-right {
+  position: absolute;
+  width: 80px;
+  bottom: 0;
+  right: 0;
+}
+
+.artikel {
+  margin-bottom: 5em;
+}
 .artikel img {
   border-radius: 12px;
   width: 80%;
   margin: auto;
 }
 .artikel h2 {
-  margin-top: 50px;
   margin-bottom: 40px;
+  color: #4A5768;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .artikel h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
 }
 .artikel p {
   text-align: justify;
+  color: #76879A;
 }
 .artikel a {
-  color: #0D253F;
+  color: #3FA5D4;
 }
 
 .hubungi {
-  background-image: url("/assets/image/hubungi.png");
+  background-image: url("/dakon/assets/image/hubungi.png");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+@media (max-width: 991.98px) {
+  .hubungi {
+    background-size: cover;
+    background-position: right;
+  }
+}
+
+footer img {
+  margin: auto;
+  width: 90%;
+}
+footer h4 {
+  color: #4A5768;
+}
+footer h5 {
+  color: #4A5768;
+  margin-top: 10px;
+}
+footer p {
+  color: #76879A;
+}
+footer i {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
