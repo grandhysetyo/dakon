@@ -117,6 +117,15 @@ html {
   background-color: #0D253F;
 }
 
+#cus-breadcrumb .breadcrumb {
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+}
+#cus-breadcrumb .breadcrumb .breadcrumb-item, #cus-breadcrumb .breadcrumb .breadcrumb-item > a, #cus-breadcrumb .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: #fff;
+}
+
 header {
   background-image: url("/dakon/assets/image/header.jpg");
   background-repeat: no-repeat;
@@ -171,6 +180,13 @@ header .header a {
   text-align: center;
   color: #4A5768;
   margin-bottom: 30px;
+}
+.card-portofolio a {
+  color: #4A5768;
+}
+.card-portofolio a:hover {
+  color: #0D253F;
+  text-decoration: none;
 }
 .card-portofolio img {
   width: 100%;
