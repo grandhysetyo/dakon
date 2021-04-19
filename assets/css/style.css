@@ -3,8 +3,11 @@ html {
 }
 
 #custom-nav {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  left: 0;
+  z-index: 999;
 }
 #custom-nav .nav-link {
   font-size: 14px;
@@ -52,6 +55,45 @@ html {
     width: fit-content;
     margin-bottom: 10px;
   }
+}
+
+#custom-nav.navbar-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  color: #0D253F;
+  padding: 5px 20px;
+  transition: 0.5s;
+  animation: scroll 0.6s 1;
+}
+@keyframes scroll {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+#custom-nav.navbar-scroll .nav-link {
+  color: #0D253F;
+}
+#custom-nav.navbar-scroll .nav-link:hover {
+  color: #0D253F;
+  background-color: #3FA5D4;
+}
+#custom-nav.navbar-scroll .nav-link:active {
+  color: #fff;
+  background-color: #3FA5D4;
+}
+#custom-nav.navbar-scroll .nav-link.active {
+  color: #fff;
+  background-color: #3FA5D4;
+}
+#custom-nav.navbar-scroll .nav-link.porto {
+  color: #fff;
+  background-color: #3FA5D4;
 }
 
 .title-section {
@@ -167,6 +209,11 @@ header .header a {
 }
 .layanan p {
   text-align: justify;
+}
+
+.layanan:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.5s;
 }
 
 .whyus h3 {
@@ -321,6 +368,13 @@ footer h4 {
 footer h5 {
   color: #4A5768;
   margin-top: 10px;
+}
+footer a {
+  color: #76879A;
+}
+footer a:hover {
+  color: #4A5768;
+  text-decoration: none;
 }
 footer p {
   color: #76879A;

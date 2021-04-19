@@ -10,8 +10,12 @@ html{
     overflow-x: hidden;
 }
 #custom-nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 100%;
+    padding: 20px 0;    
+    position: absolute;   
+    left: 0;
+    z-index: 999;
+    
     .nav-link {
         font-size: 14px;
         color: #fff;
@@ -62,6 +66,46 @@ html{
         } 
     }
 }
+#custom-nav.navbar-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    color: $primary-1;
+    padding: 5px 20px;
+    transition: 0.5s;
+    animation: scroll 0.6s 1;
+    @keyframes scroll {
+        0% {
+          transform: translateY(-100%);
+        }
+      
+        100% {
+          transform: translateY(0%);
+        }
+    }
+    .nav-link {        
+        color: $primary-1;        
+    }
+    .nav-link:hover{
+        color: $primary-1;
+        background-color: $primary-2;
+    }
+    .nav-link:active{
+        color: #fff;
+        background-color: $primary-2;
+    }
+    .nav-link.active{
+        color: #fff;
+        background-color: $primary-2;
+    }
+    .nav-link.porto{
+        color: #fff;
+        background-color: $primary-2;       
+    }
+}
+
 .title-section{
     color: #fff;
     text-align: center;
@@ -171,6 +215,10 @@ header{
     p{
         text-align: justify;
     }
+}
+.layanan:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.5s;
 }
 .whyus{
     h3{
@@ -319,6 +367,13 @@ footer{
     h5{
         color: $secondary-1;
         margin-top: 10px;
+    }
+    a{
+        color: $secondary-2;
+    }
+    a:hover{
+        color: $secondary-1;
+        text-decoration: none;
     }
     p{
         color: $secondary-2;
