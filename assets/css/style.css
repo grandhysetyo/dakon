@@ -169,7 +169,7 @@ html {
 }
 
 header {
-  background-image: url("/dakon/assets/image/header.jpg");
+  background-image: url("/assets/image/header.jpg");
   background-repeat: no-repeat;
   background-size: 100vw 750px;
 }
@@ -194,6 +194,7 @@ header .header a {
 }
 
 .layanan {
+  height: 375px;
   padding: 20px 20px;
   color: #fff;
   border-radius: 12px;
@@ -208,12 +209,12 @@ header .header a {
   margin-bottom: 20px;
 }
 .layanan p {
-  text-align: justify;
+  text-align: left;
 }
 
 .layanan:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .whyus h3 {
@@ -242,6 +243,7 @@ header .header a {
   margin-bottom: 20px;
 }
 .card-portofolio p {
+  font-size: 14px;
   color: #76879A;
 }
 
@@ -336,7 +338,7 @@ header .header a {
 }
 
 .hubungi {
-  background-image: url("/dakon/assets/image/hubungi.png");
+  background-image: url("/assets/image/hubungi.png");
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;

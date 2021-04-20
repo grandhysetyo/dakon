@@ -4,8 +4,8 @@ $primary-2: #3FA5D4;
 $primary-3: #F6F6F6;
 $secondary-1: #4A5768;
 $secondary-2: #76879A;
-$dakon: '/dakon';
-// $dakon: '';
+// $dakon: '/dakon';
+$dakon: '';
 html{
     overflow-x: hidden;
 }
@@ -200,6 +200,7 @@ header{
 }
 
 .layanan{        
+    height: 375px;
     padding: 20px 20px;
     color: #fff;
     border-radius: 12px;
@@ -213,12 +214,12 @@ header{
         margin-bottom: 20px;
     }
     p{
-        text-align: justify;
+        text-align: left;        
     }
 }
 .layanan:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .whyus{
     h3{
@@ -246,6 +247,7 @@ header{
         margin-bottom: 20px;
     }
     p{
+        font-size: 14px;
         color: $secondary-2;
     }
 }
@@ -277,7 +279,7 @@ header{
             border-radius: 50%;
         }
         .text{
-            margin-left: 40px;
+            margin-left: 40px;            
         }
         // XS
         @media (max-width: 575.98px) {
